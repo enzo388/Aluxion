@@ -1,0 +1,135 @@
+@import "components/colors";
+@import "components/fonts";
+@import "components/mixins";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: $ax_color_principal;
+  font-family: Roboto_Regular, sans-serif;
+  color: $ax_color_fonts;
+  padding: 0 3em 0 3em;
+
+  @media (max-width: 675px) {
+    padding: 0 1em 0 1em;
+  }
+
+  #app {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+
+    &.user_out {
+      grid-template-areas: "aluxion";
+      grid-template-columns: 1fr;
+    }
+
+    &.user_in {
+      grid-template-areas: "aluxion map";
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #content_aluxion {
+      grid-area: aluxion;
+      display: grid;
+      width: content;
+      grid-template-areas:
+        "nav"
+        "header"
+        "content";
+
+      grid-template-rows: 80px 1fr 1.5fr;
+
+      @media (max-width: 675px) {
+        grid-template-rows: 80px 15rem 1.5fr;
+      }
+    }
+
+    .content_map {
+      background-color: $ax_color_fonts;
+      grid-area: map;
+    }
+
+    .content_map_none {
+      display: none;
+    }
+  }
+}
+
+nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 1em;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding-right: 5em;
+
+    li {
+      float: left;
+      padding-left: inherit;
+      padding-left: 4em;
+    }
+    @media (max-width: 675px) {
+      display: none;
+    }
+  }
+}
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+
+  h1 {
+    font-family: Roboto_Bold, sans-serif;
+    font-size: 5rem !important;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 691px;
+
+    @media (max-width: 675px) {
+      font-size: 40px !important;
+      width: 300px;
+    }
+  }
+
+  @include card;
+  @include Forminput;
+}
+.content {
+  grid-area: content;
+  margin-top: 6rem;
+  display: grid;
+
+  h4 {
+    color: $ax_color_subt_grey;
+    margin-bottom: 0 !important;
+  }
+  h2 {
+    margin-top: 0.5em !important;
+    margin-bottom: 0 !important;
+  }
+
+  .team_card {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+
+    @media (max-width: 675px) {
+      grid-template-columns: repeat(auto-fill, minmax(162px, 1fr));
+    }
+
+    @include card;
+  }
+}
+map {
+  background-color: $ax_color_fonts;
+  grid-area: map;
+}
