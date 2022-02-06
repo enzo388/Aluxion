@@ -13,7 +13,7 @@ html, body {
         height: 46px;
         left: 487px;
         top: 52px;
-        border: 1px solid red;
+       
 }
 .home-cointaner {
     position: relative;
@@ -27,7 +27,6 @@ html, body {
 .algocomounanav{
     position: relative;
     display: flex;
-    border: solid 1px red !important;
     left: 380px;
     top: 60px;
     justify-content:flex-end;
@@ -46,7 +45,7 @@ html, body {
     .algocomounanav{
         position: relative;
         display: flex;
-        border: solid 1px red !important;
+       
         left: 75%;
         justify-content:flex-end;
         width: 20%;
@@ -64,7 +63,7 @@ html, body {
         display: flex;
         align-items: center;
         text-align: center;
-        border:solid 1px white;
+        
         margin: auto;
         padding: auto;
     }
@@ -75,7 +74,7 @@ html, body {
         letter-spacing: 0.06em;
         text-transform: lowercase;
         color: #FFFFFF;
-        border: solid 1px red;
+       
         margin: auto;
         padding: auto;
     }
@@ -85,7 +84,7 @@ html, body {
         height: 34px;
         left: 79%;
         top: 6.3%;
-        border:solid 1px white;
+      
         display: flex;
         align-items: center;
         text-align: center;
@@ -96,7 +95,7 @@ html, body {
         height: 34px;
         left: 87%;
         top: 6.3%;
-        border:solid 1px white;
+     
         display: flex;
         align-items: center;
         text-align: center;
@@ -108,7 +107,7 @@ html, body {
         letter-spacing: 0.06em;
         text-transform: lowercase;
         color: #FFFFFF;
-        border:solid 1px red;
+       
         margin: auto;
         padding: auto;
     }
@@ -122,7 +121,7 @@ html, body {
         color: #FFFFFF;
         margin: auto;
         padding: auto;
-        border:solid 1px red;
+        
     }
     .h1-div {
         position: absolute;
@@ -285,7 +284,7 @@ html, body {
     .contanerBusparadas{
         position: relative;
         display: flex;
-        border: solid 2px yellowgreen;
+      
         width: 86%;
         height: 50%;
         left: 10%;
@@ -312,7 +311,7 @@ html, body {
 .algocomounanav{
     position: relative;
     display: flex;
-    border: solid 1px red !important;
+
     left: 75%;
     top: 60px;
     justify-content:flex-end;
@@ -329,8 +328,7 @@ html, body {
         letter-spacing: 0.06em;
         text-transform: lowercase;
         color: #FFFFFF;
-        border: solid 1px red;
-       
+    
     }
   
 
@@ -341,7 +339,7 @@ html, body {
         letter-spacing: 0.06em;
         text-transform: lowercase;
         color: #FFFFFF;
-        border:solid 1px red;
+
        
     }
     .text-carsharing {
@@ -359,7 +357,7 @@ html, body {
         height: 211px;
         left: 80px;
         top: 391px;
-        border:solid 1px red
+
     }
     .aluxion-logo {
         position: absolute;
@@ -367,7 +365,7 @@ html, body {
         width:106px;
         right: 89.22%;
         top: 7%;
-        border:solid 1px white;
+
         background: url("../Aluxion-Web-Logo.png");
         
     }
@@ -388,7 +386,7 @@ html, body {
         height: 46px;
         left: 67%;
         top: 539px;
-        border:solid 1px purple;
+
     }
     .input-search {
         position: initial !important;
@@ -455,7 +453,7 @@ html, body {
     height: 1024px;
   
     background: #ffffff;
-    border: 2px solid black;
+
   }
   .div-container-card-blue {
     position: absolute;
@@ -476,7 +474,7 @@ html, body {
     width: 80px;
     background: url("../Aluxion-Web-Logo.png");
     background-size: 80.5px;
-    border: 1px solid red;
+ 
     
   }
   .input-search-2 {
@@ -485,7 +483,7 @@ html, body {
     height: 46px;
     left: 487px;
     top: 52px;
-    border: 1px solid red;
+
     
   }
   .parada {
@@ -517,7 +515,7 @@ html, body {
     padding: auto;
     border:none;
     transition-duration: 0.4s;
-    border: 1px solid red;
+
   }
   .lupa:hover {
     width: 20px;
@@ -531,7 +529,7 @@ html, body {
     left: 80px;
     top: 268px;
   
-    border: 0.5px solid #42526e;
+
   }
   .linea3 {
     width: 100%;
@@ -545,7 +543,7 @@ html, body {
   
     background: #56ccf2;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    border: 1px solid red;
+  
   }
   .bus2 {
     
@@ -560,7 +558,7 @@ html, body {
     letter-spacing: 0.02em;
   
     color: #ffffff;
-    border: 1px solid red;
+
   }
   .arrow-back {
     position: absolute;
@@ -568,7 +566,7 @@ html, body {
     height: 32px;
     left: 73px;
     top: 154px;
-    border: 1px solid red;
+
     margin: 0;
   }
   .arrow-vector {
@@ -577,7 +575,7 @@ html, body {
     height: 12.24px;
     left: 6px;
     top: 9px;
-    border: 1px solid green;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -612,7 +610,7 @@ html, body {
     letter-spacing: 0.02em;
   
     color: #42526e;
-    border: 1px solid red;
+   
   }
   .ubication {
     position: absolute;
@@ -629,7 +627,7 @@ html, body {
     letter-spacing: 0.02em;
   
     color: #ffffff;
-    border: 1px solid red;
+  
   }
   .group1 {
     position: absolute;
@@ -637,7 +635,7 @@ html, body {
     height: 16px;
     left: 659px;
     top: 235px;
-    border: 1px solid red;
+
   }
   .group2 {
     position: absolute;
@@ -645,7 +643,7 @@ html, body {
     height: 16px;
     left: 690px;
     top: 235px;
-    border: 1px solid red;
+
   }
   .div-container-card-map {
     position: absolute;
@@ -654,7 +652,7 @@ html, body {
     height: 1024px;
     left: 52%;
     top: 0px;
-    border: solid blueviolet 2px;
+  
     background: linear-gradient(
       181.36deg,
       rgba(46, 49, 56, 0.8) -25.2%,
@@ -677,7 +675,7 @@ html, body {
     height: 277px;
     left: 80px;
     top: 853px;
-    border: solid 1px red;
+
   }
   .div-cointainer-title-team{
     position: absolute;
@@ -762,7 +760,7 @@ html, body {
             height: 34px;
             left: 957px;
             top: 60px;
-            border: solid 1px white;
+ 
             display: flex;
         }
         .text-metro {
@@ -772,7 +770,7 @@ html, body {
             letter-spacing: 0.06em;
             text-transform: lowercase;
             color: #FFFFFF;
-            border: solid 1px red;
+
             margin: auto;
             padding: auto;
         }
@@ -782,7 +780,7 @@ html, body {
         height: 34px;
         left: 1239px;
         top: 60px;
-        border: solid 1px white;
+  
         display: flex;
     
         }
@@ -792,7 +790,7 @@ html, body {
             height: 34px;
             left: 1096px;
             top: 60px;
-            border:solid 1px white;
+       
             display: flex;
             
         }
@@ -803,7 +801,7 @@ html, body {
             letter-spacing: 0.06em;
             text-transform: lowercase;
             color: #FFFFFF;
-            border:solid 1px red;
+
             margin: auto;
             padding: auto;
         }
@@ -817,7 +815,7 @@ html, body {
             color: #FFFFFF;
             margin: auto;
             padding: auto;
-            border:solid 1px red;
+
         }
         .h1-div {
             position: absolute;
@@ -825,7 +823,7 @@ html, body {
             height: 211px;
             left: 80px;
             top: 391px;
-            border:solid 1px red
+
         }
         .aluxion-logo {
             position: absolute;
@@ -833,7 +831,7 @@ html, body {
             width:106px;
             right: 89.22%;
             top: 7%;
-            border:solid 1px white;
+
             background: url("../Aluxion-Web-Logo.png");
             
         }
@@ -854,7 +852,6 @@ html, body {
             height: 46px;
             left: 67%;
             top: 539px;
-            border:solid 1px purple;
         }
         .input-search {
             position: initial !important;
