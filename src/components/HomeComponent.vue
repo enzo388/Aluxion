@@ -34,7 +34,7 @@
     </div>
     <Content :abrirmodal='abrirmodalHome'/>
     <button type="submit" @click="planTravel('Calle del oso', 8)">CONSEGIR DATAAA</button>
-    <h1 v-if="response.length > 0">{{ response }}</h1>
+  
      <InfoMapComponent :infoBus="paradas" v-if="verMapa"/>
   </div>
  
