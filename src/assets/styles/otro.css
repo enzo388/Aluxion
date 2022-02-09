@@ -1,0 +1,455 @@
+.contanerBusparadas{
+    position: relative;
+    display: flex;
+  
+    width: 86%;
+    height: 50%;
+    left: 10%;
+    background: rgb(255, 255, 255);
+    top: 300px;
+    margin: 0px 1px 0px 1px !important;
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    overflow-x: hidden;
+     overflow-y: auto;
+}
+
+.home-cointaner {
+position: relative;
+width:100%;
+
+
+background: #091E42 no-repeat center center fixed;   
+background-position: center;
+background-size: cover;
+}
+.algocomounanav{
+position: relative;
+display: flex;
+
+left: 75%;
+top: 60px;
+justify-content:flex-end;
+width: 300px;
+height:60px;
+flex-direction: row;
+}
+
+
+.text-metro {
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+
+}
+
+
+.text-cercanias {
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+
+   
+}
+.text-carsharing {
+    font-family: SF Pro Display;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+.h1-div {
+    position: absolute;
+    width: 50%;
+    height: 211px;
+    left: 80px;
+    top: 391px;
+
+}
+.aluxion-logo {
+    position: absolute;
+    height: 18px;
+    width:106px;
+    right: 89.22%;
+    top: 7%;
+
+    background: url("../Aluxion-Web-Logo.png");
+    
+}
+.h1-text-webmax {
+    position: absolute;
+    font-family: SF Pro Display;
+    font-size: 92px;
+    line-height: 105px; 
+    letter-spacing: 0.02em; 
+    color: rgba(255, 255, 255, 0.9);
+    
+    margin: auto ;
+    padding: auto;
+}
+.div-input-search {
+    position: absolute;
+    width: 414px;
+    height: 46px;
+    left: 67%;
+    top: 539px;
+
+}
+.input-search {
+    position: initial !important;
+    width: 100%;
+    height: 20px;
+    left: calc(50% - 138px/2 - 138px);
+    bottom: 9px;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: auto;
+    padding: auto;
+    background-color: transparent;
+    border: none;
+    border-color: none;
+}
+.rectangle-div {
+    position: absolute;
+    height: 3px;
+    left: 0%;
+    right: 0%;
+    bottom: 0.53px;
+    background: #d0d1d3;
+    border-radius: 4px;
+    margin: auto;
+    padding: auto;
+}
+
+.div-lupa-input {
+position: absolute;
+left: 92.51%;
+right: 3.14%;
+top: 34.78%;
+bottom: 26.09%;
+
+margin: auto;
+padding: auto;
+}
+.lupa-input-button {
+position: absolute;
+width: 18px;
+height: 18px;
+background: url("../Vector-lupa.png");
+background-size: 100%;
+margin: auto;
+padding: auto;
+border:none;
+transition-duration: 0.4s;
+}
+.lupa-input-button:hover {
+width: 20px;
+height: 20px;
+}
+
+
+
+/* InfoMapComponent------------------------------------------------------ */
+
+.detail-container {
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #ffffff;
+
+}
+.div-container-card-blue {
+position: absolute;
+width: 751px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: #091e42;
+mix-blend-mode: normal;
+}
+.logo-aluxion2 {
+position: absolute;
+left: 5.56%;
+right: 87.22%;
+top: 6.45%;
+bottom: 91.99%;
+width: 80px;
+background: url("../Aluxion-Web-Logo.png");
+background-size: 80.5px;
+
+
+}
+.input-search-2 {
+position: absolute;
+width: 219px;
+height: 46px;
+left: 487px;
+top: 52px;
+
+
+}
+.parada {
+position: absolute;
+width: 138px;
+height: 20px;
+left: 0px;
+bottom: 8px;
+font-family: SF Pro Display;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+color: #ffffff;
+padding: auto;
+background-color: transparent;
+border: none;
+border-color: none;
+}
+.lupa {
+position: absolute;
+width: 18px;
+height: 18px;
+left: calc(50% - 18px / 2 + 87.5px);
+bottom: 4px;
+
+background: url("../Vector-lupa.png");
+background-size: 100%;
+margin: auto;
+padding: auto;
+border:none;
+transition-duration: 0.4s;
+
+}
+.lupa:hover {
+width: 20px;
+height: 20px;
+}
+
+.linea2 {
+position: absolute;
+width: 626px;
+height: 0px;
+left: 80px;
+top: 268px;
+
+
+}
+.linea3 {
+width: 100%;
+}
+.bus1 {
+
+left: 12.8%;
+right: 74.4%;
+top: 8.33%;
+bottom: 9.85%;
+
+background: #56ccf2;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+.bus2 {
+
+left: 26.4%;
+right: 0%;
+height: 5px;
+font-family: SF Pro Display;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+
+}
+.arrow-back {
+position: absolute;
+width: 32px;
+height: 32px;
+left: 73px;
+top: 154px;
+
+margin: 0;
+}
+.arrow-vector {
+position: absolute;
+width: 18px;
+height: 12.24px;
+left: 6px;
+top: 9px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+transform: rotate(-180deg);
+padding: 0;
+margin: 0;
+}
+.h1-arrow-back {
+position: absolute;
+width: 18px;
+height: 12.24px;
+left: 7px;
+top: 10px;
+
+background: #42526e;
+transform: rotate(-180deg);
+/* border: 1px solid blue; */
+margin: auto;
+padding: auto;
+}
+.busses-near {
+position: absolute;
+width: 151px;
+height: 20px;
+left: 80px;
+top: 194px;
+
+font-family: SF Pro Display;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #42526e;
+
+}
+.ubication {
+position: absolute;
+width: 266px;
+height: 40px;
+left: 80px;
+top: 220px;
+
+font-family: SF Pro Display;
+font-size: 33px;
+line-height: 39px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+
+}
+.group1 {
+position: absolute;
+width: 16px;
+height: 16px;
+left: 659px;
+top: 235px;
+
+}
+.group2 {
+position: absolute;
+width: 16px;
+height: 16px;
+left: 690px;
+top: 235px;
+
+}
+.div-container-card-map {
+position: absolute;
+
+width: 690px;
+height: 1024px;
+left: 52%;
+top: 0px;
+
+background: linear-gradient(
+  181.36deg,
+  rgba(46, 49, 56, 0.8) -25.2%,
+  rgba(46, 49, 56, 0.23) 37.12%,
+  rgba(46, 49, 56, 0.14) 62.39%,
+  rgba(46, 49, 56, 0) 98.84%
+);
+}
+
+/* Content ---------------------------- */
+
+.content {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 90%;
+height: 277px;
+left: 80px;
+top: 853px;
+
+}
+.div-cointainer-title-team{
+position: absolute;
+width: 168px;
+height: 66px;
+left: 80px;
+top: 747px;
+
+}
+.Aluxiones-sub-tittle{
+font-family: SF Pro Display;
+font-size: 33px;
+line-height: 39px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: rgba(255, 255, 255, 0.9);
+}
+.team-h4{
+font-family: SF Pro Display;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+
+color: #42526E;
+
+}
+
+.function-span{
+font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: #8993A4;
+}
+.Aluxion-name-h4{
+font-family: SF Pro Display;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.02em;
+
+color: rgba(255, 255, 255, 0.9);
+}
+
+
+.card {
+margin-top: 3em;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+}

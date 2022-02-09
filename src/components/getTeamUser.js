@@ -1,4 +1,10 @@
-import user from '../assets/user.png';
+
+import user1 from '../assets/user1.png';
+import user2 from '../assets/user2.png';
+import user3 from '../assets/user3.png';
+import user4 from '../assets/user4.png';
+import user5 from '../assets/user5.png';
+import user6 from '../assets/user6.png';
 
 export default function getTeamUser() {
 
@@ -6,8 +12,8 @@ export default function getTeamUser() {
 
   const TeamUser = [
     {
-      urlImage: user,
-      altImg: user,
+      urlImage: user1,
+      altImg: user1,
       nameUser: "Esther Howard",
       function: "Frontend developer",
       paradaCasa: "3378",
@@ -20,8 +26,8 @@ export default function getTeamUser() {
       },
     },
     {
-      urlImage: user,
-      altImg: user,
+      urlImage: user2,
+      altImg: user2,
       nameUser: "Bessie Cooper",
       function: "Frontend developer",
       paradaCasa: "2908",
@@ -34,8 +40,8 @@ export default function getTeamUser() {
       },
     },
     {
-      urlImage: user,
-      altImg: user,
+      urlImage: user3,
+      altImg: user3,
       nameUser: "Bessie Cooper",
       function: "Backend developer",
       paradaCasa: "1688",
@@ -48,8 +54,8 @@ export default function getTeamUser() {
       },
     },
     {
-      urlImage: user,
-      altImg: user,
+      urlImage: user4,
+      altImg: user4,
       nameUser: "Jenny Wilson",
       function: "Mobile developer",
       paradaCasa: "59",
@@ -62,8 +68,8 @@ export default function getTeamUser() {
       },
     },
     {
-      urlImage: user,
-      altImg: user,
+      urlImage: user5,
+      altImg: user5,
       nameUser: "Savannah Nguyen",
       function: "Head of Backend",
       paradaCasa: "189",
@@ -76,8 +82,8 @@ export default function getTeamUser() {
       },
     },
     {
-      urlImage: user,
-      altImg: user,
+      urlImage: user6,
+      altImg: user6,
       nameUser: "Javi",
       function: "CEO & Founder",
       paradaCasa: "189",
