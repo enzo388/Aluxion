@@ -111,9 +111,7 @@ export default defineComponent({
       this.errorToken = true;
     }
   },
-  async updated() {
-   
-  },
+
   data() {
     return {
       response: [],
@@ -828,7 +826,7 @@ export default defineComponent({
       }
     },
     async getStopsbyId(e) {
-      const e = e
+      const b = e
       try {
         if (e) {
           if (this.response[0].accessToken && this.input > 0) {
