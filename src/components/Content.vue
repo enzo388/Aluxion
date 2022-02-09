@@ -13,7 +13,7 @@
         >
             <img :src="user.urlImage" :alt="user.altImg" />
             <h4 v-text="user.nameUser" class="Aluxion-name-h4"></h4>
-            <span v-text="user.function" class="function-span"></span> -->
+            <span v-text="user.function" class="function-span"></span> 
         </div>
     </div>
   </div>

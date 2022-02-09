@@ -142,21 +142,17 @@ export default defineComponent({
     };
   },
   methods: {
-    /*   async asignar(){
-      console.log("setiando data a infoDelBus")
-      this.infoDelBus = await this.infoBus.data[0]
-      console.log("DATA SETIADA", this.infoDelBus)
-    }, */
+
     async cerrarmapa(info) {
       this.info = false;
       this.loading = false;
-      console.log("asdasd");
+ 
       this.cerrar(info);
     },
     async imprimir(info) {
       this.info = false;
       this.loading = false;
-      console.log(info);
+    
       this.cords = Object.values(info);
       this.cords = {
         lat: this.cords[1],
@@ -167,7 +163,7 @@ export default defineComponent({
         this.loading = true;
       }, 1000);
 
-      console.log(this.cords, "console.log en infomap");
+   
     },
   },
 });

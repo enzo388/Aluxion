@@ -52,11 +52,6 @@ export default defineComponent({
     lat: Number,
     lng: Number,
   },
-  async updated(){
-    
-   await console.log(isNaN(this.lat1), "lat1")
-
-  },
    data() {
     return  { 
       lat1 : this.lat, 

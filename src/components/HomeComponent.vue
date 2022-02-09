@@ -7,7 +7,7 @@
       :infoJobs="infoUserAluxioner"
       v-if="modal12 && tokenObtenido"
     />
-    -->
+
     <div class="algocomounanav">
       <div class="menu-div-nav">
         <h5 class="text-metro">metro</h5>
@@ -19,11 +19,11 @@
     <div class="div-input-search">
       <div class="div-lupa-input">
         <button
-        v-on:click="getStopsbyId(true)"
-        class="lupa-input-button"
-      ></button>
+          v-on:click="getStopsbyId(true)"
+          class="lupa-input-button"
+        ></button>
       </div>
-      
+
       <input
         required
         type="number"
@@ -31,7 +31,7 @@
         placeholder="¿N° De Parada?"
         v-model="input"
       />
-      
+
       <div class="rectangle-div"></div>
     </div>
 
@@ -50,7 +50,6 @@
     />
     <InfoMapComponent
       key="3"
-      
       :infoStops="paradas1"
       :cerrar="cerrarMapa"
       v-if="verMapaInfoStops"
@@ -76,7 +75,7 @@
         FUERA DE SERVICIO. Usted sera Redirigido en 3 Segundos.
       </h1>
       <h1 class="h1-text-errorToken" v-if="errorTravelstops">
-        No existe la parada {{stopId}}. Usted sera Redirigido en 3 Segundos.
+        No existe la parada {{ stopId }}. Usted sera Redirigido en 3 Segundos.
       </h1>
       <img src="../assets/loading-loader.gif" />
     </div>
@@ -102,21 +101,18 @@ export default defineComponent({
   async created() {
     this.tokenObtenido = await this.datosApi();
     if (this.tokenObtenido) {
-      console.log(
-        "llamada created Finalizada:",
-        "token Obtenido:",
-        this.response[0].accessToken,
+      
         setTimeout(() => {
           this.loading = true;
         }, 1000)
-      );
+      
     } else {
-      console.log("algo fallo");
+      
       this.errorToken = true;
     }
   },
   async updated() {
-    console.log(this.input);
+   
   },
   data() {
     return {
@@ -721,7 +717,7 @@ export default defineComponent({
   },
   methods: {
     async datosApi() {
-      console.log("llamando a datosApi");
+      
       let result = await axios.get(
         "https://openapi.emtmadrid.es/v1/mobilitylabs/user/login/",
         {
@@ -737,31 +733,28 @@ export default defineComponent({
       this.response = result.data.data;
       if (this.response.length > 0) {
         if (this.response[0].accessToken.length > 0) {
-          console.log("datos Obtenidos con exito");
+     
           return true;
         } else {
-          console.log("algo fallo en obtener el token");
+          
           return false;
         }
       }
-      console.log("algo fallo en obtener el token");
+     
       return false;
     },
     async planTravel(a, b) {
-      console.log("se esta ejecutando plantravel y recivio.. :", a, " ", b);
-      console.log("creando la funcion seekStops");
+     
       const seekStops = async (a, b) => {
         try {
           this.errorTravel = false;
           this.loadingSearchPlanTravel = true;
-          console.log(this.loadingSearchPlanTravel);
+          
           if (this.response[0].accessToken) {
-            console.log("el token existe.");
-            this.verMapa = false
+           
+            this.verMapa = false;
             const accessToken = this.response[0].accessToken;
-            console.log("token existente:", accessToken);
-            console.log("llamando a la api, espere..");
-            console.log("seekStops recibio", a, b);
+            
             let result = await axios.get(
               `https://openapi.emtmadrid.es/v1/transport/busemtmad/stops/arroundstreet/${a}/${b}/400/`,
               {
@@ -770,59 +763,50 @@ export default defineComponent({
                 },
               }
             );
-            /* console.log(result.data.code); */
+            
             if (result.data.code === "00") {
               this.paradas = result.data;
-              console.log("el servidor de emtmadrid respondio con exito");
-              console.log("se setio la data en paradas");
+             
               this.loadingSearchPlanTravel = false;
               return true;
             } else {
-              /*  this.errorTravel = true */
+              
               setTimeout(() => {
                 this.loadingSearchPlanTravel = false;
               }, 3000);
-              console.log(
-                "la llamada a la api de emtmadrid fallo",
-                result.data
-              );
+      
               let data = {
                 data: this.hardcodeado,
               };
-              this.paradas = data; // esto no va
-              console.log(this.paradas);
-              return true; // era false
+              this.paradas = data; 
+             
+              return true; 
             }
           }
         } catch (error) {
           console.log(error.message);
         }
       };
-      console.log("llamando a seekStops", a, b);
+     
       let paradasObtenidas = await seekStops(a, b);
-      console.log("la llamada a seekstops a finalizado ", paradasObtenidas);
+     
       if (paradasObtenidas) {
-        console.log("setiando ver mapa en true");
+      
         this.verMapa = true;
         return paradasObtenidas;
       } else {
-        console.log("algo fallo");
+        const x1 = 545454
       }
     },
 
     async abrirmodalHome(info) {
       if (this.tokenObtenido) {
-        console.log("datos recividos en el modal:", info);
-        console.log("abriendo el modal..");
+  
         this.modal12 = true;
-        console.log("El Modal fue abierto con exito");
+
         this.infoUserAluxioner = info;
-        console.log(
-          "se setio la info del modal en infoUserAluxioner",
-          this.infoUserAluxioner
-        );
       } else {
-        console.log("no se peude abrir el modal porke no hay token");
+        const x2 = 1515454
       }
     },
     async cerrarmodalHome() {
@@ -834,31 +818,30 @@ export default defineComponent({
     },
     async cerrarMapa(info) {
       if (this.verMapa || this.verMapaInfoStops) {
-        console.log(info, "cerrar mapa");
+
         this.verMapa = !info;
         this.verMapaInfoStops = false;
         this.paradas = [];
-         this.paradas1 = [];
+        this.paradas1 = [];
       } else {
         this.verMapa = true;
       }
     },
     async getStopsbyId(e) {
-      console.log(e);
+      const e = e
       try {
         if (e) {
           if (this.response[0].accessToken && this.input > 0) {
-            this.loadingSearchPlanTravel = true
-             this.paradas1 = {}
-            console.log("el token existe.");
+            this.loadingSearchPlanTravel = true;
+            this.paradas1 = {};
+           
             const accessToken = this.response[0].accessToken;
-            console.log(accessToken);
+          
             this.stopId = this.input;
             const stop = this.stopId;
             this.verMapaInfoStops = false;
             this.errorTravel = false;
-            console.log("antes del get")
-            console.log(stop, "numero de parada")
+          
             let result = await axios.get(
               `https://openapi.emtmadrid.es/v1/transport/busemtmad/stops/${stop}/detail/`,
               {
@@ -868,28 +851,29 @@ export default defineComponent({
               }
             );
 
-            if (result.data.code === "00" && result.data.data[0].stops[0].stop == this.stopId) {
-              console.log(result.data.data[0].stops[0])
-              
-              this.paradas1 = result.data.data[0].stops[0]
-              console.log(this.paradas1)
-              
+            if (
+              result.data.code === "00" &&
+              result.data.data[0].stops[0].stop == this.stopId
+            ) {
+          
+              this.paradas1 = result.data.data[0].stops[0];
+            
               this.loadingSearchPlanTravel = false;
-              
-              this.errorTravelstops = false
-              
+
+              this.errorTravelstops = false;
+
               setTimeout(() => {
-                 this.verMapaInfoStops = true;
-              },1000)
+                this.verMapaInfoStops = true;
+              }, 1000);
             } else if (result.data.code === "90") {
-              this.errorTravel = true
-              setTimeout(() =>{
+              this.errorTravel = true;
+              setTimeout(() => {
                 this.loadingSearchPlanTravel = false;
-              this.errorTravelstops = false
-              this.errorTravel = true
-              this.stopId = null
-              }, 3000)
-              console.log(result.data.description, "algo Fallo");
+                this.errorTravelstops = false;
+                this.errorTravel = true;
+                this.stopId = null;
+              }, 3000);
+             
             }
           } else {
             console.log("token o input vacio");
